@@ -43,7 +43,7 @@ class AttractionsController < ApplicationController
     @attraction = Attraction.new(params[:attraction])
 
     respond_to do |format|
-      if @attraction.save
+      if @attraction.save!
         format.html { redirect_to @attraction, notice: 'Attraction was successfully created.' }
         format.json { render json: @attraction, status: :created, location: @attraction }
       else
