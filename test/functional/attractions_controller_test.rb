@@ -18,7 +18,7 @@ class AttractionsControllerTest < ActionController::TestCase
 
   test "should create attraction" do
     assert_difference('Attraction.count') do
-      post :create, attraction: { destination_id: @attraction.destination_id, latitude: @attraction.latitude, longitude: @attraction.longitude, name: @attraction.name }
+      post :create, attraction: { destination_id: @attraction.destination_id, latitude: @attraction.latitude, longitude: @attraction.longitude, name: @attraction.name, image_url: @attraction.image_url }
     end
 
     assert_redirected_to attraction_path(assigns(:attraction))

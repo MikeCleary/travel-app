@@ -3,7 +3,7 @@ class Attraction < ActiveRecord::Base
 
   belongs_to :destination
 
-  validates :name, :presence => :true
+  validates :name, :image_url, :presence => :true
 
   geocoded_by :destination_and_attraction
   after_validation :geocode
