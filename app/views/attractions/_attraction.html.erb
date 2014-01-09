@@ -1,0 +1,5 @@
+<li class="attraction_list_item">
+  <h3 class="attraction_title"><%= "#{attraction.name}" %></h3>
+  <%= link_to (image_tag attraction.image_url), destination_attraction_path(attraction.destination, attraction) %></br>
+  <%= link_to "See map", "http://maps.google.com/?q=#{attraction.latitude},#{attraction.longitude}" %>
+</li>

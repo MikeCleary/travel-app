@@ -1,18 +1,1 @@
-# Travel Application
-
-We're going to make a rails app that models a travel brochure. We've got controllers and models for a Destination and a Attraction. You need to put in views to make the app work.
-
-# TODO
-
-* Fork and git clone this repo as normal
-* Read the models to understand how the app works. It uses Ruby geocoder to pull in latitude and longitude coordinates, you don't need to change any of this stuff.
-* Read the controllers and figure out what's going on. They are basically CRUD controllers, you don't need to change any of that stuff either.
-* Add views to app/views/destinations and app/views/attractions to make the app work and the tests to pass. Add more tests if necessary
-* Update your views to use partials, so that each destination and each attraction is inside a partial
-* Update your destination show action so that you can see the images and titles for each attraction on the show page.
-* Add a link to the Google map for each attraction:
-
-<%= link_to 'Map', "http://maps.google.com/?q=#{@attraction.latitude},#{@attraction.longitude}" %>
-
-* Add CSS to make it look funky.
-* Send me a pull request
+A rails app that models a travel brochure.

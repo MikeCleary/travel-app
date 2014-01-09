@@ -1,0 +1,24 @@
+.destination li{
+  margin: auto;
+}
+
+.destination li {
+  margin-bottom: 32px;
+}
+
+.destination img {
+  width: 800px;
+}
+
+.destinations img {
+  width: 300px;
+  height: 200px;
+}
+
+.index_list {
+  list-style-type: none;
+}
+
+.list_thumb {
+  width: 300px;
+}

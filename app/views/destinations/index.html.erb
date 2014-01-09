@@ -1,4 +1,5 @@
-<%= render "destinations_list" %>
-
-<!-- :locals => {:attractions => @attractions} %>  -->
-
+<% @destinations.each do |destination| %>
+  <ul class="destinations">
+    <%= render :partial => "destination", :locals => {:destination => destination, :index_list => true}%>
+  <% end %>
+</ul>

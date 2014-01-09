@@ -1,0 +1,7 @@
+<li class="destination_list_item">
+  <h2><%= destination.name %></h2>
+  <%= image_tag(destination.image_url, :class => "list_thumb")%></br>
+<% if index_list %>  
+  <%= link_to "See more...", destination_url(destination) %>
+<% end %>
+</li>

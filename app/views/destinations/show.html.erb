@@ -1,0 +1,8 @@
+<div class="destination">
+<%= render :partial => 'destinations/destination', :locals => {:destination => @destination, :index_list => false} %>
+</div>
+<ul class="attractions">
+  <% @destination.attractions.each do |attraction| %>
+    <%= render :partial => '/attractions/attraction', :locals => {:attraction => attraction} %>
+  <% end %>
+</ul>

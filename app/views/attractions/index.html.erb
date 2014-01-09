@@ -1,1 +1,3 @@
-<%= render "attractions_list" %>
+<div class="attractions">
+  <%= render :partial => "attractions_list", :locals => {:attractions => @attractions}%>
+</div>

@@ -1,13 +1,44 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
+ *= require reset
  *= require_self
- *= require_tree .
+ *= require_tree
  */
+
+body {
+  background-image: url(http://www.walloop.com/wp-content/uploads/2013/10/Wallpaper-palm-trees-168.jpg);
+  font-family: sans-serif;
+  color: lightgrey;
+}
+
+#main {
+  width: 800px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+}
+
+#main h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+#main h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px; 
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+
+a:visited {
+  color: grey;
+}

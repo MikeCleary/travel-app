@@ -1,9 +1,17 @@
 TravelApp::Application.routes.draw do
-  resources :attractions
+  
+  resources :attractions, :only => [:index]
 
+  resources :destinations do
+    resources :attractions
+  end
 
-  resources :destinations
-
+#============================================================
+  # Nested version
+  # resources :destinations do
+  #   resources :attractions
+  # end
+#============================================================
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

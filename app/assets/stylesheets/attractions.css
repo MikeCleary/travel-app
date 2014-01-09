@@ -1,0 +1,13 @@
+.attraction img {
+  width: 500px;
+}
+
+.attractions img {
+  width: 300px;
+  height: 200px;
+}
+
+.attractions li {
+  display: inline-block;
+  width: 300px;
+}
